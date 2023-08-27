@@ -1,0 +1,86 @@
+/* Ensure padding and borders are included in width/height calculations */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #171717;
+  color: #fff;
+  position: fixed; /* Change from relative to fixed */
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #777;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #1391ac;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  font-size: small;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    color: #777;
+    text-decoration: none;
+  }
+}
+
+.menu-icon {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+  font-size: large;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .navbar-links {
+    position: absolute;
+    top: 60px;
+    left: 100%; /* start from the right end of the screen */
+    transform: translateX(0); /* no translation initially */
+    flex-direction: column;
+    gap: 10px;
+    background-color: #444;
+    padding: 20px;
+    width: 150px;
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-links.open {
+    transform: translateX(
+      -100%
+    ); /* translate it left by its own width when open */
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon */
+  }
+}
+
+body {
+  overflow-x: hidden; /* To ensure no horizontal scroll */
+}

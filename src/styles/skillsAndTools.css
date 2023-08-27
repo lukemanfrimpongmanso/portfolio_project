@@ -1,0 +1,110 @@
+.title {
+  width: 400px;
+  padding-left: 50px;
+  position: relative;
+  display: inline-block;
+  color: #777; }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  justify-content: center; }
+
+.main-container .content-container {
+  width: 30%;
+  margin: 2% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main-container .content-container img {
+  width: 30%;
+  border-radius: 15px;
+  margin-bottom: 10px; }
+
+.main-container .content-container h1 {
+  color: #777777;
+  font-size: medium; }
+
+.main-container .content-container p {
+  color: #777777;
+  font-size: 0.7em;
+  font-weight: 800;
+  width: 200px; }
+
+.main-container .bottom {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  margin-top: -20px; }
+
+.tools-items {
+  margin-top: 60px;
+  padding: 30px 80px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #171717; }
+
+.tools-items h2 {
+  width: 400px;
+  padding-left: 20px;
+  margin-bottom: 100px;
+  position: relative;
+  display: inline-block;
+  color: #777; }
+
+.skill-item {
+  margin-bottom: 20px;
+  flex-basis: calc(33.333% - 20px);
+  justify-content: space-between; }
+
+.skills-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between; }
+
+label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8em;
+  display: block;
+  margin-bottom: 5px; }
+
+.skill-bar {
+  min-width: 250px;
+  /* Adjust this value based on your desired minimum width */
+  width: 50%;
+  height: 5px;
+  background: linear-gradient(to top, #282828, #282828, #282828);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+  transform: rotateX(15deg);
+  border-radius: 15px; }
+
+.fill {
+  height: 100%;
+  background: linear-gradient(to top, #159bb9, #159bb9);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5); }
+
+@media (max-width: 768px) {
+  .main-container .bottom {
+    flex-direction: column;
+    justify-content: center; }
+  .main-container .content-container {
+    width: 100%; }
+  .main-container .content-container img {
+    width: 20%; }
+  .main-container .top {
+    flex-direction: column;
+    justify-content: center; }
+  .tools-items {
+    padding: 10px 10px; }
+  .tools-items h2 {
+    width: 100%;
+    text-align: center; }
+  .skills-item-container {
+    justify-content: center; } }
