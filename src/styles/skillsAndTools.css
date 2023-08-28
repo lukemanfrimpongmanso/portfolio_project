@@ -74,7 +74,6 @@ label {
 
 .skill-bar {
   min-width: 250px;
-  /* Adjust this value based on your desired minimum width */
   width: 50%;
   height: 5px;
   background: linear-gradient(to top, #282828, #282828, #282828);

@@ -2,16 +2,40 @@
 
 import React from 'react';
 import '../styles/contactMe.scss';
+import emailjs from 'emailjs-com';
 
 const ContactMe = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Add logic to handle form submission, e.g., send data to an API
-    console.log('Form submitted');
+
+    const templateParams = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value,
+    };
+
+    emailjs
+      .send(
+        'service_oh0vc9s',
+        'template_e9kecsx',
+        templateParams,
+        '6-XXak9coBW6-d6bV'
+      )
+      .then(
+        (response) => {
+          console.log(
+            'Email sent successfully!',
+            response.status,
+            response.text
+          );
+          alert('Email sent successfully!');
+        },
+        (error) => {
+          alert('Failed to send email. Please try again.');
+        }
+      );
   };
 
-
-  
   return (
     <div className="contact-container">
       <h2>Contact Me</h2>

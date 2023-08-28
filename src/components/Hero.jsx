@@ -14,7 +14,12 @@ function Hero() {
           <p className="hero-subtitle">
             Please scroll down to know more about me
           </p>
-          <button className="contact-button">Contact Me </button>
+          <a
+            href="mailto:lukemanfrimpongmanso360@gmail.com"
+            className="contact-button-link"
+          >
+            <button className="contact-button">Contact Me</button>
+          </a>
           <a href={cv} download={cv}>
             <button className="contact-button cv" fileURL={cv}>
               Download CV

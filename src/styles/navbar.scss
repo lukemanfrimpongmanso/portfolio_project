@@ -1,4 +1,4 @@
-/* Ensure padding and borders are included in width/height calculations */
+
 *,
 *::before,
 *::after {
@@ -11,7 +11,7 @@
   padding: 10px 20px;
   background-color: #171717;
   color: #fff;
-  position: fixed; /* Change from relative to fixed */
+  position: fixed;
   width: 100%;
   z-index: 1000;
 }
@@ -50,18 +50,18 @@
 }
 
 .menu-icon {
-  display: none; /* Hidden by default */
+  display: none; 
   cursor: pointer;
   font-size: large;
 }
 
-/* For smaller screens */
+
 @media (max-width: 768px) {
   .navbar-links {
     position: absolute;
     top: 60px;
-    left: 100%; /* start from the right end of the screen */
-    transform: translateX(0); /* no translation initially */
+    left: 100%; 
+    transform: translateX(0); 
     flex-direction: column;
     gap: 10px;
     background-color: #444;
@@ -73,14 +73,14 @@
   .navbar-links.open {
     transform: translateX(
       -100%
-    ); /* translate it left by its own width when open */
+    ); 
   }
 
   .menu-icon {
-    display: block; /* Show the menu icon */
+    display: block; 
   }
 }
 
 body {
-  overflow-x: hidden; /* To ensure no horizontal scroll */
+  overflow-x: hidden; 
 }

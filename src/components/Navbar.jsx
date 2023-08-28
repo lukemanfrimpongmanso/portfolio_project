@@ -21,7 +21,7 @@ function Navbar() {
         <a href="#contact">Contact</a>
       </div>
       <div className="menu-icon" onClick={toggleSidebar}>
-        ☰ {/* Simple menu icon, you can replace with an SVG or an icon font */}
+        ☰ 
       </div>
     </nav>
   );

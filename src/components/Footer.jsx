@@ -9,19 +9,18 @@ const Footer = () => {
       <footer className="navbar">
         <a href="#hero" className="navbar-logo">
           <div className="circle"></div>
-          
           Lukeman Frimpong
         </a>
-        
+
         <div className="scroll-and-icon">
           <div className="socials">
-            <a href="linkedin">
+            <a href="https://www.linkedin.com/in/lukeman-frimpong-306bb3212/">
               <span className="icon">
                 <img src={Image2} alt="" srcset="" />
               </span>
             </a>
 
-            <a href="github">
+            <a href="https://github.com/lukemanfrimpongmanso">
               <span className="icon">
                 <span className="icon">
                   <img src={Image3} alt="" srcset="" />

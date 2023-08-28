@@ -1,4 +1,4 @@
-/* ... existing styles ... */
+
 
 body,
 html {
@@ -14,7 +14,6 @@ html {
 }
 
 .navbar-links.open + .app-container {
-  transform: translateX(-150px); /* Translate the entire container */
+  transform: translateX(-150px); 
 }
 
-/* ... rest of the styles ... */
